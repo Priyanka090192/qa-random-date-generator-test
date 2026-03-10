@@ -73,7 +73,7 @@ The testing scope was limited to the Random Date Generator feature.
 | TC11 | UI usability | Layout, buttons | Clear layout | UI clean | Pass | - |
 | TC12 | Mobile responsiveness | Small screen | Output readable | Some overflow | Fail | BUG-006 |
 | TC13 | Copy generated date | Copy button | Able to copy | Available at botton of generate button | N/A | IMP-001 |
-| TC14 | Start Date = End Date | Enter same date | Only one date | One date generated | Pass | IMP-002 |
+| TC14 | Start Date = End Date with multiple count | Enter same Start and End Date and request multiple dates | All generated dates should respect the date range | Same date repeated for all outputs | Pass / Observation | IMP-002 (UX Note) |
 
 ## 6. Issue Identified
 
