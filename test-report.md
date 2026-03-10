@@ -42,12 +42,22 @@ Device: MacBook
 
 ## 5. Test Scenarios
 
-| Test Case | Scenario | Expected Result | Status |
-|-----------|----------|----------------|--------|
-| TC01 | Generate random date | System should generate a valid date | Pass |
-| TC02 | Generate multiple dates | System should display multiple dates | Pass |
-| TC03 | Validate date range | Generated date should be within selected range | Pass |
-| TC04 | Repeated generation | System should continue generating dates without error | Pass |
+
+| Test Case ID | Scenario | Steps | Expected Result | Actual Result | Status |
+|--------------|---------|-------|----------------|---------------|--------|
+| TC01 | Generate a single random date | Click "Generate Random Date" | A valid random date should be generated | A valid random date was generated | Pass |
+| TC02 | Generate multiple random dates | Enter number >1 in "Number of Dates" | Correct number of random dates generated | Correct number of dates generated | Pass |
+| TC03 | Validate date range | Enter Start Date and End Date | Generated date falls within range | All generated dates were within range | Pass |
+| TC04 | Repeated generation | Click Generate multiple times rapidly | System continues generating valid dates | Successfully generated multiple dates | Pass |
+| TC05 | Input start date later than end date | Enter Start Date > End Date | System shows error message | No validation; tool generated random date | Fail |
+| TC06 | Empty date input | Leave Start/End Date blank | Should use default date range or show message | Default range used | Pass |
+| TC07 | Invalid date format | Enter an invalid date format | System should show validation message | Some invalid formats accepted | Fail |
+| TC08 | Generate large number of dates | Enter 100+ in "Number of Dates" | System handles request without crash | Successfully generated 100 dates | Pass |
+| TC09 | Date format selection | Change output format (MM/DD/YYYY, YYYY-MM-DD) | Generated date matches selected format | Output format correctly displayed | Pass |
+| TC10 | UI usability | Verify layout, buttons, and readability | Buttons visible, layout clear, result readable | UI is clean and easy to use | Pass |
+| TC11 | Mobile responsiveness | Open on mobile or small screen | Layout adjusts correctly, dates readable | Works well on mobile | Pass |
+| TC12 | Copy generated date | Copy button (if exists) | Date copied to clipboard | Not available in current version | N/A (suggestion) |
+| TC13 | Rapid random date generation | Click generate 50+ times quickly | System should not freeze | Successfully generated all dates | Pass |
 
 ## 6. Usability Observations
 
