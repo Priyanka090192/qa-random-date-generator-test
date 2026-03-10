@@ -72,7 +72,7 @@ The testing scope was limited to the Random Date Generator feature.
 | TC10 | Leap year check | Non-leap year Feb 29 | No Feb 29 | Feb 29 sometimes generated | Fail | BUG-005 |
 | TC11 | UI usability | Layout, buttons | Clear layout | UI clean | Pass | - |
 | TC12 | Mobile responsiveness | Small screen | Output readable | Some overflow | Fail | BUG-006 |
-| TC13 | Copy generated date | Copy button | Able to copy | Available at botton of generate button | N/A | IMP-001 |
+| TC13 | Copy generated date | Click copy button | Able to copy generated dates | Copy button works correctly and copies date | Pass | IMP-001 |
 | TC14 | Start Date = End Date with multiple count | Enter same Start and End Date and request multiple dates | All generated dates should respect the date range | Same date repeated for all outputs | Pass / Observation | IMP-002 (UX Note) |
 
 ## 6. Issue Identified
