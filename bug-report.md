@@ -4,7 +4,7 @@
 **URL Tested:** https://codebeautify.org/generate-random-date  
 **Tester:** Priyanka Raghav  
 **Testing Type:** Manual Testing  
-**Date:** March 2026  
+**Date:** 9 March 2026  
 
 ---
 
@@ -67,7 +67,7 @@ Confuses users relying on a consistent format
 **Expected Result:**  
 System should limit input or show warning  
 **Actual Result:**  
-Tool tries to generate all dates, causing browser to crash 
+Tool tries to generate all dates, causing browser to crash or run slow
 **Impact:**  
 Can crash browser or degrade performance  
 
@@ -83,7 +83,7 @@ Can crash browser or degrade performance
 **Expected Result:**  
 February 29 should not appear  
 **Actual Result:**  
-Tool sometimes generates February 29 incorrectly  
+Tool generates February 29 incorrectly  
 **Impact:**  
 Generates invalid dates  
 
@@ -117,10 +117,10 @@ Add a **copy button** next to output for easy copying
 ---
 
 ## 8. IMP‑002 (UX Suggestion)
-**Title:** Start Date = End Date  
+**Title:** Start Date = End Date with multiple count  
 **Severity:** N/A  
 **Priority:** Low  
 **Description:**  
-When Start Date = End Date, only one date is generated  
+When the Start Date and End Date are the same and multiple dates are requested, the same date is repeated for all outputs. This is expected behavior due to the limited date range.  
 **Suggested Improvement:**  
-Show a small note in the UI explaining this to the user
+Add a small note or tooltip in the UI informing users that requesting multiple dates with a single-day range will result in repeated dates. This enhances clarity and prevents confusion.
