@@ -1,44 +1,59 @@
 # Random Date Generator – Test Report
 
-Application: Random Date Generator  
-URL Tested: https://codebeautify.org/generate-random-date  
-Tester: Priyanka Raghav  
-Testing Type: Manual Testing  
-Date: 9 March 2026
+**Application:** Random Date Generator  
+**URL Tested:** https://codebeautify.org/generate-random-date  
+**Tester:** Priyanka Raghav  
+**Testing Type:** Manual Testing  
+**Date:** 9 March 2026
+
+---
 
 ## 1. Testing Objective
 
-The goal of this testing exercise was to evaluate the functionality and usability of the Random Date Generator tool. The testing focused on verifying whether the application correctly generates random dates based on user inputs and whether it handles edge cases and invalid inputs properly.
+The goal of this testing exercise was to evaluate the functionality, usability, and robustness of the Random Date Generator tool. The focus was on verifying correct date generation based on user inputs, handling edge cases, and validating input restrictions.
+
+---
 
 ## 2. Scope of Testing
 
-The testing scope was limited to the Random Date Generator feature only.
+The testing scope was limited to the Random Date Generator feature.
 
 ### In Scope
-- Generating random dates
-- Selecting date ranges
-- Generating multiple dates
-- Verifying date format
-- Basic input validation
+- Generating random dates  
+- Selecting date ranges  
+- Generating multiple dates  
+- Verifying date format  
+- Input validation  
+- Basic UI usability  
 
 ### Out of Scope
-- Other tools available on the website
-- Backend implementation
-- Performance under heavy traffic
+- Other tools on the website  
+- Backend implementation  
+- Performance under high traffic (except large number input test)  
+
+---
 
 ## 3. Test Environment
 
-Browser: Google Chrome  
-Operating System: macOS  
-Device: MacBook
+- **Browser:** Google Chrome  
+- **Operating System:** macOS  
+- **Device:** MacBook  
 
 ## 4. Features Tested
 
-- Generate random date functionality
-- Date generation within a selected range
-- Output formatting
-- Handling of invalid inputs
-- Repeated date generation
+- Generate a single random date  
+- Generate multiple random dates at once  
+- Generate dates within a specific Start Date and End Date range  
+- Validate input dates (Start Date <= End Date)  
+- Validate date format selection (MM/DD/YYYY, YYYY-MM-DD)  
+- Handle empty date inputs using default range  
+- Repeated date generation without errors  
+- Leap year and boundary date checks (e.g., Feb 29 on non-leap years)  
+- UI usability: button visibility, layout clarity, result readability  
+- Mobile responsiveness on small screens  
+- Handling large number of dates (stress testing)  
+- Negative testing with invalid date formats  
+- Feature suggestions: copy-to-clipboard functionality, clear UX when Start Date = End Date
 
 ## 5. Test Scenarios
 
@@ -60,12 +75,40 @@ Device: MacBook
 | TC13 | Copy generated date | Copy button | Able to copy | Not available | N/A | IMP-001 |
 | TC14 | Start Date = End Date | Enter same date | Only one date | One date generated | Pass | IMP-002 |
 
-## 6. Usability Observations
+## 6. Issue Identified
 
-The tool is simple and easy to use. The layout is clean and the generate button is clearly visible. The results appear quickly after clicking generate.
+The following critical issues were identified during testing:
 
-Some improvements that could enhance usability include:
+- **BUG‑001:** No validation when Start Date > End Date  
+- **BUG‑002:** Some invalid date formats accepted  
+- **BUG‑003:** Output format mismatch  
+- **BUG‑004:** Large number of dates may slow down system  
+- **BUG‑005:** Leap year edge cases not handled  
+- **BUG‑006:** Mobile responsiveness issues  
 
-- Better validation messages for incorrect inputs
-- Option to copy generated dates
-- Ability to export generated dates
+Feature improvements suggested:  
+- **IMP‑001:** Copy-to-Clipboard functionality  
+- **IMP‑002:** UX clarification when Start Date = End Date  
+
+---
+## 7. Usability Observations
+
+- The tool is simple, clean, and easy to use.  
+- The generate button is clearly visible and accessible.  
+- Output appears quickly after clicking generate.  
+
+Suggested improvements:  
+- Provide clear validation messages for incorrect inputs.  
+- Add copy-to-clipboard functionality for generated dates.  
+- Include visual hints or notes when Start Date = End Date.  
+- Improve mobile layout for smaller devices.  
+
+---
+
+## 8. Conclusion
+
+The Random Date Generator performs its primary function effectively, generating random dates as expected. Most core features work well, and the tool is easy to use.  
+
+However, input validation for date ranges and formats, mobile responsiveness, and additional usability features could be improved. Addressing these issues would enhance reliability and user experience.  
+
+---
