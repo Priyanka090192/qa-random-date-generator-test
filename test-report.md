@@ -72,7 +72,7 @@ The testing scope was limited to the Random Date Generator feature.
 | TC10 | Leap year check | Non-leap year Feb 29 | No Feb 29 | Feb 29 sometimes generated | Fail | BUG-005 |
 | TC11 | UI usability | Layout, buttons | Clear layout | UI clean | Pass | - |
 | TC12 | Mobile responsiveness | Small screen | Output readable | Some overflow | Fail | BUG-006 |
-| TC13 | Copy generated date | Copy button | Able to copy | Not available | N/A | IMP-001 |
+| TC13 | Copy generated date | Copy button | Able to copy | Available at botton of generate button | N/A | IMP-001 |
 | TC14 | Start Date = End Date | Enter same date | Only one date | One date generated | Pass | IMP-002 |
 
 ## 6. Issue Identified
@@ -87,7 +87,7 @@ The following critical issues were identified during testing:
 - **BUG‑006:** Mobile responsiveness issues  
 
 Feature improvements suggested:  
-- **IMP‑001:** Copy-to-Clipboard functionality  
+- **IMP‑001:** Copy-to-Clipboard functionality wrong placement  
 - **IMP‑002:** UX clarification when Start Date = End Date  
 
 ---
